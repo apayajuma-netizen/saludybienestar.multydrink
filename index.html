@@ -16,28 +16,25 @@ body {
 header {
     background: linear-gradient(90deg,#1e8449,#2ecc71);
     color: white;
-    padding: 40px 20px;
-}
-
-h1 {
-    margin: 0;
-}
-
-.container {
-    padding: 20px;
+    padding: 30px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
     max-width: 400px;
-    margin: auto;
+    border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .precio {
-    font-size: 32px;
+    font-size: 30px;
     color: #27ae60;
     font-weight: bold;
 }
@@ -49,7 +46,6 @@ button {
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    cursor: pointer;
 }
 
 .comprar {
@@ -62,26 +58,27 @@ button {
     color: white;
 }
 
-/* BENEFICIOS */
-.beneficios {
-    margin-top: 30px;
-}
-
-.beneficios div {
-    background: white;
-    margin: 10px auto;
-    padding: 12px;
-    max-width: 350px;
-    border-radius: 8px;
-}
-
-/* URGENCIA */
 .urgente {
     color: red;
     font-weight: bold;
 }
 
-/* BOTÓN FLOTANTE */
+.beneficios div {
+    background: #eafaf1;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.test {
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
 .float {
     position: fixed;
     bottom: 20px;
@@ -91,7 +88,6 @@ button {
     border-radius: 50%;
     color: white;
     text-decoration: none;
-    font-size: 20px;
 }
 </style>
 </head>
@@ -99,13 +95,14 @@ button {
 <body>
 
 <header>
-<h1>Multydrink</h1>
+<h1>Multydrink Colombia</h1>
 <p>Energía • Salud • Bienestar</p>
 </header>
 
-<div class="container">
-
 <div class="card">
+
+<img src="https://productosquesanan.com/wp-content/uploads/2022/03/multydrink-medellin.jpg">
+
 <h2>Multydrink Original</h2>
 
 <p class="precio">$425.000</p>
@@ -116,28 +113,28 @@ button {
 
 <button class="whatsapp" onclick="whatsapp()">Comprar por WhatsApp</button>
 
-<h3>Escanea para comprar</h3>
-
-<img src="https://multyhealth.co/content/images/thumbs/0000185_paquete-mayorista-6-box-multydrink.jpeg">code=MTH-GBi8q">
-<p>🌿 Bebida antioxidante 100% natural</p>
-<p>⚡ Energía sin azúcar ni químicos</p>
-<p>🛡️ Refuerza tu sistema inmune</p>
-
 </div>
 
 <div class="beneficios">
 <h3>Beneficios</h3>
 
-<div>✔ Aumenta tu energía</div>
-<div>✔ Mejora tu sistema inmune</div>
-<div>✔ Ayuda a la concentración</div>
-<div>✔ Producto natural</div>
+<div>✔ Energía natural</div>
+<div>✔ Antioxidantes poderosos</div>
+<div>✔ Refuerza el sistema inmune</div>
+<div>✔ Mejora concentración</div>
 
 </div>
 
+<div>
+<h3>Opiniones</h3>
+
+<div class="test">"Me dio mucha energía 🔥" - Carlos</div>
+<div class="test">"Excelente producto 💯" - María</div>
+<div class="test">"Lo recomiendo totalmente" - Juan</div>
+
 </div>
 
-<a class="float" href="https://wa.me/573004499593?text=Hola quiero comprar Multydrink" target="_blank">
+<a class="float" href="https://wa.me/573004499593?text=Hola quiero comprar Multydrink por $110.000" target="_blank">
 💬
 </a>
 
@@ -147,7 +144,7 @@ window.open("https://app.multyhealth.com/sign-up?code=MTH-GBi8q");
 }
 
 function whatsapp() {
-window.open("https://wa.me/573004499593?text=Hola quiero comprar Multydrink, ¿cómo pago?");
+window.open("https://wa.me/573004499593?text=Hola quiero comprar Multydrink por $110.000");
 }
 </script>
 
